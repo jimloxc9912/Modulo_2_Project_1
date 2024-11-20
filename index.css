@@ -1,31 +1,39 @@
+/* Ajustes para hacer el body un contenedor flex */
 body {
-    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Se asegura de que la página ocupe toda la altura de la pantalla */
     margin: 0;
     padding: 0;
-    background-color: #c7e6f8; /* Color de fondo */
+    background-color: #c7e6f8;
 }
 
+/* Cabecera */
 header {
-    background-color: #0e4153; /* Color oscuro para el encabezado */
+    background-color: #0e4153;
     color: white;
-    text-align: center;
-    padding: 20px 0;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
+/* Logo de la pastelería */
 header .logo {
-    width: 100px; /* Ajusta el tamaño del logo */
+    width: 100px;
     height: auto;
-    display: block;
-    margin: 0 auto; /* Centra el logo */
+    margin-right: 20px;
 }
 
+/* Barra de navegación */
 nav {
     display: flex;
-    justify-content: center;
-    background-color: #f6a9e3; /* Color de fondo de la barra de navegación */
+    justify-content: flex-end;
+    background-color: #f6a9e3;
     padding: 10px;
 }
 
+/* Enlaces de navegación */
 nav a {
     text-decoration: none;
     color: white;
@@ -34,23 +42,56 @@ nav a {
     font-weight: bold;
 }
 
-nav a:hover {
-    background-color: #b478ae; /* Color de hover */
-}
-
+/* Contenedor principal */
 .main-content {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1; /* Permite que este contenedor ocupe el espacio restante de la pantalla */
     padding: 20px;
 }
 
-.products, .about, .contact {
-    width: 30%;
+/* Sección de productos */
+.products {
+    width: 100%;
+    padding: 20px;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
+.product-item {
+    width: 23%;
+    text-align: center;
+    margin: 10px;
+    padding: 15px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.product-item:hover {
+    transform: scale(1.05);
+}
+
+.product-img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.product-img:hover {
+    transform: scale(1.1);
+}
+
+/* Pie de página */
 footer {
     text-align: center;
     padding: 10px;
-    background-color: #0e4153; /* Mismo color oscuro en el pie de página */
+    background-color: #0e4153;
     color: white;
 }
