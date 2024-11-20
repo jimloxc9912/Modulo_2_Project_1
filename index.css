@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #c7e6f8; /* Color de fondo */
+}
+
+header {
+    background-color: #0e4153; /* Color oscuro para el encabezado */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header .logo {
+    width: 100px; /* Ajusta el tamaño del logo */
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Centra el logo */
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #f6a9e3; /* Color de fondo de la barra de navegación */
+    padding: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    background-color: #b478ae; /* Color de hover */
+}
+
+.main-content {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.products, .about, .contact {
+    width: 30%;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #0e4153; /* Mismo color oscuro en el pie de página */
+    color: white;
+}
