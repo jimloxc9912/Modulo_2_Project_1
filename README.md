@@ -18,9 +18,10 @@ Este proyecto tiene como objetivo practicar el uso de Git y GitHub, así como la
 
 ## Instrucciones
 
-1. Clona este repositorio en tu máquina local.
+1. Clona este repositorio en tu máquina local. 
+    git clone https://github.com/jimloxc9912/Modulo_2_Project_1.git
 2. Asegúrate de tener los archivos `index.html` y `styles.css` correctamente configurados.
-3. Sigue los pasos para publicar el proyecto en [GitHub Pages](https://pages.github.com/).
+3. Este proyecto está desplegado en GitHub Pages. Puedes ver la página web en vivo en el siguiente enlace:(https://pages.github.com/).
 
 ## Licencia
 
