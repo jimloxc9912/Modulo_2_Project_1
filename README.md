@@ -1,4 +1,4 @@
-# Proyecto Página Web Básica: LAND
+# Proyecto Página Web Básica: Pastelería LAND
 
 ## Descripción
 
@@ -19,8 +19,8 @@ Este proyecto tiene como objetivo practicar el uso de Git y GitHub, así como la
 ## Instrucciones
 
 1. Clona este repositorio en tu máquina local. 
-    git clone https://github.com/jimloxc9912/Modulo_2_Project_2.git
-2. Asegúrate de tener los archivos `index.html` y `main.css` correctamente configurados.
+    git clone https://github.com/jimloxc9912/Modulo_2_Project_1.git
+2. Asegúrate de tener los archivos `index.html` y `styles.css` correctamente configurados.
 3. Este proyecto está desplegado en GitHub Pages. Puedes ver la página web en vivo en el siguiente enlace:(https://jimloxc9912.github.io/Modulo_2_Project_1/).
 
 ## Licencia

@@ -1,0 +1,106 @@
+/* General body styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Header container */
+header {
+    background-color: #fff;
+    padding: 15px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky; /* Fijo en la parte superior */
+    top: 0;
+    z-index: 1000;
+}
+
+/* Header content alignment */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo styling */
+.logo h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.logo h1 a {
+    text-decoration: none;
+    color: #222;
+    font-weight: bold;
+}
+
+.logo h1 a span {
+    color: #ff6f61;
+}
+
+/* Navigation menu */
+nav ul.menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 15px; /* Espaciado entre elementos */
+}
+
+nav ul.menu li {
+    position: relative;
+}
+
+nav ul.menu li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    padding: 5px 10px;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+nav ul.menu li a:hover {
+    color: #ff6f61;
+    border-bottom: 2px solid #ff6f61;
+}
+
+/* Dropdown styling */
+nav ul.menu li ul {
+    display: none; /* Ocultar submenú */
+    position: absolute;
+    top: 100%; /* Colocar debajo del enlace principal */
+    left: 0;
+    background-color: #fff;
+    padding: 10px 0;
+    list-style: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+}
+
+nav ul.menu li:hover ul {
+    display: block; /* Mostrar submenú en hover */
+}
+
+nav ul.menu li ul li a {
+    padding: 10px 20px;
+    display: block;
+    color: #333;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav ul.menu li ul li a:hover {
+    background-color: #f7f7f7;
+    color: #ff6f61;
+}
+
+/* Responsive Menu (Optional for Smaller Screens) */
+@media (max-width: 768px) {
+    nav ul.menu {
+        flex-direction: column; /* Cambiar a columna */
+        gap: 10px;
+    }
+
+    nav ul.menu li ul {
+        position: static; /* Alinear el submenú al flujo natural */
+        box-shadow: none;
+    }
+}
